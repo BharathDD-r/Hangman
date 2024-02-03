@@ -7,12 +7,12 @@ def guess(x):
     random_number = random.randint(low, high)
     my_guess = 0
     while my_guess != random_number:
-        my_guess = int(input(f" guess a number between 1 and {x}: "))
+        my_guess = int(input(f" Please guess a number between 1 and {x}: "))
         if my_guess < random_number:
-            print("low")
+            print(f"The number is low than {my_guess}")
         elif my_guess > random_number:
-            print("high")
-    print(f"congo you guessed the number {random_number}")
+            print(f"The number is high than {my_guess}")
+    print(f"Congratulations you guessed the number {random_number} correctly!")
 
 
 guess(10)
